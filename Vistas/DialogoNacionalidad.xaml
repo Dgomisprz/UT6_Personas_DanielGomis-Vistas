@@ -1,0 +1,19 @@
+﻿<Page x:Class="UT6_Personas_DanielGomis_Vistas.Vistas.DialogoNacionalidad"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:UT6_Personas_DanielGomis_Vistas.Vistas"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="DialogoNacionalidad">
+
+    <StackPanel Margin="10">
+        <TextBlock>Nacionalidad</TextBlock>
+        <TextBox Margin="0,0,0,10" Text="{Binding Path=Nacionalidad, UpdateSourceTrigger=PropertyChanged}" />
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
+            <Button Name="AceptarButton" Width="80" Margin="0,0,5,0" IsDefault="True" Click="AceptarButton_Click">Aceptar</Button>
+            <Button Width="80" IsCancel="True">Cancelar</Button>
+        </StackPanel>
+    </StackPanel>
+</Page>
